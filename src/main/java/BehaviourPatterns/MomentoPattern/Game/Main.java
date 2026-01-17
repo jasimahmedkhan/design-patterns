@@ -1,4 +1,4 @@
-package BehaviourPatterns.MomentoPattern.GameExample;
+package BehaviourPatterns.MomentoPattern.Game;
 
 public class Main {
 

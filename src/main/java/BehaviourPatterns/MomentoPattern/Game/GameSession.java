@@ -1,4 +1,4 @@
-package BehaviourPatterns.MomentoPattern.GameExample;
+package BehaviourPatterns.MomentoPattern.Game;
 
 import java.util.ArrayList;
 import java.util.List;

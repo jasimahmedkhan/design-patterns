@@ -16,7 +16,10 @@ public class EditorHistory {
     }
 
     public EditorMemento Undo(){
-        return _history.pop(); // Take photo from top of stack
+        if(!_history.isEmpty())
+            return _history.pop(); // Take photo from top of stack
+        System.out.println("No more text to undo");
+        return null;
     }
 
 }
