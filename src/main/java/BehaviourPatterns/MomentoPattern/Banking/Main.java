@@ -8,7 +8,6 @@ public class Main {
         TransactionHistory history = new TransactionHistory();
         System.out.println("The balance at this stage = " + account.Balance);
 
-
         account.Deposit(200);
         history.Save(account);
         System.out.println("The balance at this stage = " + account.Balance);
@@ -17,15 +16,14 @@ public class Main {
         history.Save(account);
         System.out.println("The balance at this stage = " + account.Balance);
 
-
         account.Deposit(200);
         history.Save(account);
         System.out.println("The balance at this stage = " + account.Balance);
-
 
         account.Withdraw(100);
 
         // Need to revert the transaction, some unexplained thing happened!
+        history.Undo(account);
         history.Undo(account);
         System.out.println("The balance at this stage = " + account.Balance);
     }
