@@ -4,7 +4,7 @@ public class Main {
 
     static void main(String[] args) {
         WeatherStation station = new WeatherStation();
-        TemperatureDisplay temperatureDisplay = new TemperatureDisplay();
+        TemperatureDisplay temperatureDisplay = new TemperatureDisplay(station);
         ThermostatDisplay thermostatDisplay = new ThermostatDisplay();
         station.Attach(temperatureDisplay);
         station.Attach(thermostatDisplay);
@@ -22,6 +22,9 @@ public class Main {
         station.Detach(thermostatDisplay);
         station.setTemperature(21);
         station.setTemperature(22);
+        thermostatDisplay.detach();
+        station.setTemperature(23);
+        station.setTemperature(24);
 
     }
 }
