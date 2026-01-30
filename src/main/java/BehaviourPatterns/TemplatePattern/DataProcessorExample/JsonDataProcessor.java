@@ -1,4 +1,4 @@
-package BehaviourPatterns.TemplatePattern.DataProcessor;
+package BehaviourPatterns.TemplatePattern.DataProcessorExample;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;

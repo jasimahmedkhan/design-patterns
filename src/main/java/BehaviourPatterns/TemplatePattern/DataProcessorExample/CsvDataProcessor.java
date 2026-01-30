@@ -1,4 +1,4 @@
-package BehaviourPatterns.TemplatePattern.DataProcessor;
+package BehaviourPatterns.TemplatePattern.DataProcessorExample;
 
 public class CsvDataProcessor extends DataProcessor{
 

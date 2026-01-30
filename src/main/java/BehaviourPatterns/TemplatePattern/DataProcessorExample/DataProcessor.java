@@ -1,4 +1,4 @@
-package BehaviourPatterns.TemplatePattern.DataProcessor;
+package BehaviourPatterns.TemplatePattern.DataProcessorExample;
 
 // Abstract base class for data processing operations
 public abstract class DataProcessor {
