@@ -23,7 +23,7 @@ public class StockTicker implements IStockSubject{
     @Override
     public void NotifyObservers() {
         for (IStockObserver observer : observers) {
-            observer.update(this.symbol, this.price);
+            observer.update(this.symbol, this.price); // Run Time Polymorphism
         }
     }
 

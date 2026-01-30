@@ -28,7 +28,12 @@ public class WeatherStation implements ISubject<Float>{
 
     @Override
     public void NotifyAllObserver() {
-        for(IObserver<Float> observer : observers){
+        // we are making a copy of the list of observers,
+        // so that we can iterate over it without changing the original list.
+        // Ensuring that at run-time if an observer is removed, it won't affect the other observers.
+        // This is called defensive copying.
+        var observers = List.copyOf(this.observers);
+        for(var observer : observers){
             observer.update(temperature);
         }
     }
